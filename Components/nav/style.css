@@ -1,0 +1,57 @@
+.navbar{
+    background-color: var(--interactive-color);
+    z-index: 1;
+}
+.link{
+    list-style: none;
+    padding: 2px;
+    margin: 8px;
+    font-size: 1.3rem;
+    font-weight: bolder;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+}
+.link:hover{
+    cursor: pointer;
+}
+.link-active::before, .link::before{
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 100%;
+    bottom: 0%;
+    left: 105%;
+    transition: 0.4s ease-in-out;
+    animation-name: modern2;
+    animation-timing-function: ease-in-out;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    background-color: var(--text-color);
+}
+.link::before{
+    left: 100%;
+}
+.link:hover::before{
+    animation-name: modern1;
+}
+@keyframes modern1 {
+    0%{
+        left: -105%;
+    }
+    100%{
+        left: 0%;
+    }
+}
+@keyframes modern2 {
+    0%{
+        left: 0%;
+    }
+    100%{
+        left: 105%;
+    }
+}
+.link-active::before{
+    left: 0%;
+    animation: none;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buttons</title>
+    <link rel="stylesheet" href="../buttons/style.css">
+    <link rel="stylesheet" href="../../css/starter.css">
+    <link rel="icon" type="image/png" href="../../media/logo.png">
+    <link rel="stylesheet" href="../../css/layout.css">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body{
+            background-color: black;
+        }
+        .component{
+            margin-bottom: 50px;
+            margin-top: 50px;
+            font-size: 100%;
+        }
+        textarea{
+            background-color: #0b002b;
+            color: white;
+            padding: 25px;
+            border: solid 1px #4400ff;
+            outline: solid 1px #4400ff;
+            cursor: pointer;
+            margin-bottom: 100px;
+        }
+        h1{
+            color: #4400ff;
+            border-bottom: 2px solid#4400ff;
+            margin-top: 25px;
+        }
+    </style>
+</head>
+<body class="column">
+    <main class="container column">
+
+        <h1>Navbar</h1>
+
+        <div class="row">
+            <button class="btn btn-underline">
+               <a href="style.css" download>download css</a>
+            </button>
+            <button class="btn btn-underline">
+                <a href="index.html" download >download html </a>
+            </button>
+        </div>
+
+
+        <nav class="component navbar row">
+            <ul class="link_group row">
+                <li class="link link-active">Home</li>
+                <li class="link">Products</li>
+                <li class="link">About us</li>
+                <li class="link">Contact</li>
+            </ul>
+        </nav>
+
+        <textarea cols="60" rows="4">
+            <button class="btn btn-classic">
+                Classic
+            </button>
+        </textarea>
+
+    </main>
+</body>
+</html>
